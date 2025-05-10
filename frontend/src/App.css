@@ -1,0 +1,117 @@
+
+/* frontend/src/App.css */
+.App {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  color: white;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #bb86fc;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+.app-header .subtitle {
+  font-size: 1em;
+  color: #b0b0b0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(187, 134, 252, 0.2);
+}
+
+.card img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto 15px auto;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  padding: 5px;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.card img:hover {
+  transform: scale(0.9);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #bb86fc;
+  font-size: 1.5em;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #c0c0c0;
+  flex-grow: 1;
+}
+
+.product-card .buy-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #bb86fc;
+  color: #121212;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .buy-button:hover {
+  background-color: #9e66de;
+}
+
+.loading, .error {
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 18px;
+  background-color: #333;
+  color: #e0e0e0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  transform: scale(1);
+}
+
+.back-button:hover {
+  background-color: #444;
+  transform: scale(0.95);
+}
